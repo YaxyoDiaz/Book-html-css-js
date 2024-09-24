@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book and Phone Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Book and Phone Objects</h1>
+    <div class="container">
+      <div class="box" id="bookBox">
+        <h2>Book</h2>
+        <p><strong>Title:</strong> <span id="bookTitle">"IT"</span></p>
+        <p>
+          <strong>Author:</strong> <span id="bookAuthor">"Stephen King"</span>
+        </p>
+        <p><strong>Year:</strong> <span id="bookYear">2023</span></p>
+        <p><strong>Pages:</strong> <span id="bookPages">300</span></p>
+        <p>
+          <strong>Current Page:</strong> <span id="bookCurrentPage">0</span>
+        </p>
+        <button onclick="readBook(50)">Read 50 Pages</button>
+        <button onclick="minusBook(50)">Minus 50 Pages</button>
+        <p><strong>Progress:</strong> <span id="bookProgress">0%</span></p>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+      <div class="box" id="phoneBox">
+        <h2>Phone</h2>
+        <p><strong>Brand:</strong> <span id="phoneBrand">Samsung</span></p>
+        <p>
+          <strong>Model:</strong> <span id="phoneModel">Galaxy S24 Ultra</span>
+        </p>
+        <p><strong>Battery:</strong> <span id="phoneBattery">100%</span></p>
+        <button onclick="makeCall(10)">Make 10-minute Call</button>
+        <button onclick="chargePhone(20)">Charge Phone 20%</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
